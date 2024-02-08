@@ -1,4 +1,5 @@
 The Frontend for the Web-Aplication SpotiQueue 
+SpotiQ-Backend-Public needs to be running for the webpage to work properly. 
 
 Watch a demo here - https://youtu.be/YXbg9j6xO7Y
 
