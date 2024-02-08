@@ -2,8 +2,11 @@ The Frontend for the Web-Aplication SpotiQueue
 
 Watch a demo here - https://youtu.be/YXbg9j6xO7Y
 
-
-
+- SpotiQueue gives guests the opportunity to contribute with music wishes.
+- QR code at the table gives access to the app
+- Add song requests
+- Vote function
+- Winning proposals are sent to the playback queue
 
 
 # Getting Started with Create React App
