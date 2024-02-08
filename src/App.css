@@ -1,0 +1,444 @@
+
+.App {
+  text-align: center;
+  border: 2px solid goldenrod;
+  margin: auto;
+  background-color: indigo;
+  min-height: 100vh;
+}
+
+
+.NavBarBox{
+  position: absolute ;
+  top: 10px;
+  right:auto ;
+  z-index: 1;
+}
+
+.NavbarSendToVote
+{
+  width: 70px;
+
+}
+
+.NavBarBtnAddToVote
+{
+  background-image: linear-gradient(to right, indigo 0%, #ED8F03  200%, #FFB75E  100%);
+  background-color: transparent;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.NavBarBtn
+{
+  background-color: transparent;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+}
+
+.SpotifySearch{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.SearchAddASongWish{
+  margin-top: 50px;
+  position: relative;
+}
+
+.SearchField{
+  position: relative;
+  align-self: center;
+}
+
+.LogoSearch{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.SearchBar {
+  background-image: url("/public/Images/searchbar.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  height: 35px;
+  width: 380px;
+  padding-left: 60px;
+  border-color: #ED8F03 !important;
+outline: none;
+  border-radius: 30px;
+}
+
+.LogoSearchImage{
+  width: 130px;
+
+}
+
+.SearchAddASongWishImage { 
+  width: 350px;
+}
+
+.TracksRow { 
+  background-image: linear-gradient(to right, indigo 5%, #ED8F03  80%, #FFB75E  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid darkgoldenrod;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.TracksRow:hover{
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.TrackText{
+  font-size: clamp(14px, 1vw, 18px);
+  word-wrap: break-word;
+}
+
+.TextSearchRow{
+  margin-left: 10px;
+  font-weight: bold;  
+  font-size: medium;
+  color: beige;
+}
+
+.Thumbnail{
+  height: 40px;
+  border: 2px solid darkgoldenrod;
+  border-radius: 10px;
+}
+
+
+.TrackList{
+  margin: 10px;
+}
+.PollTracksList{
+  margin: 10px;
+}
+.PollTracksListDeactivated{
+  margin: 10px;
+  pointer-events: none;
+}
+
+.BtnSendToVote{
+  background-image: linear-gradient(to right, indigo 0%, #ED8F03  80%, #FFB75E  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px #eee;
+  margin-left: 20px;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  height: 43px;
+  margin-top: 30px;
+  font-size: clamp(14px, 1vw, 18px);
+  word-wrap: break-word;
+}
+.btnSubmittedVote{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.BtnSendToVote:hover{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.TrackRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.ThumbnailTwo{
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+
+.TrackText{
+  background-image: linear-gradient(to right, indigo 30%, #ED8F03  100%, #FFB75E  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px #eee;
+  margin-top: 30px;
+  border: 1px solid goldenrod;
+  border-radius: 20px;
+  width: 300px;
+  height: 43px;
+  display: flex; 
+  align-items: center;
+  padding-left: 10px;
+  /* white-space: nowrap;
+  overflow: hidden; */
+}
+
+/* .TrackText {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.TrackText span {
+  display: inline-block;
+  animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(-100%);}
+} */
+
+
+
+
+
+.ImageSendToVote{
+  width: 100px;
+}
+
+.ImageMakeASongWish{
+  width:100px
+}
+
+.FrontBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.timer{
+  width: 30% !important;
+  text-align: center;
+}
+
+.timerText{
+color: bisque !important;
+width: 100% !important;
+text-align: center;
+}
+.timerText.glow {
+  color:white;
+  text-shadow: 0 0 10px #fff, 0 0 20px indigo, 0 0 30px #ED8F03, 0 0 40px #FFB75E, 0 0 50px #FFB75E, 0 0 60px #FFB75E, 0 0 70px #FFB75E;
+  font-weight: bolder;
+  font-size: 40px;
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px indigo, 0 0 30px #ED8F03, 0 0 40px #FFB75E, 0 0 50px #FFB75E, 0 0 60px #FFB75E, 0 0 70px #FFB75E;
+  }
+  40% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px indigo, 0 0 30px #ED8F03, 0 0 40px #FFB75E, 0 0 50px #FFB75E, 0 0 60px #FFB75E, 0 0 70px #FFB75E;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px indigo, 0 0 30px #ED8F03, 0 0 40px #FFB75E, 0 0 50px #FFB75E, 0 0 60px #FFB75E, 0 0 70px #FFB75E;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #FFB75E, 0 0 40px #FFB75E, 0 0 50px #FFB75E, 0 0 60px #FFB75E, 0 0 70px #FFB75E, 0 0 80px #FFB75E;
+  }
+}
+
+.LogoFront{
+  width: 350px;
+  align-self: center;
+}
+
+.BtnAddToVote{
+  background-image: linear-gradient(to right, indigo 0%, #ED8F03  80%, #FFB75E  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border: 1px solid goldenrod;
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-left: 25px;
+  margin-bottom: 60px;
+  box-shadow: 0px 3px 20px 2px goldenrod;
+
+}
+
+.BtnAddToVote:hover{
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.BtnSongWish{
+  background-image: linear-gradient(to right, indigo 0%, #ED8F03  80%, #FFB75E  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 25px;
+  
+  box-shadow: 0px 3px 20px 2px goldenrod;
+}
+
+.BtnSongWish:hover{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* PollNo songwish */
+
+.NoPollBox{
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  flex: 1;
+  /* border: 1px solid red; */
+  margin-top: 90px;
+  
+}
+.ImageNoPoll{
+  width: 70%;
+}
+
+.ImageMakeASongWish2{
+  width: 80%;
+  /* border: 1px solid red; */
+}
+
+.BtnSongWish2{
+  background-image: linear-gradient(to right, indigo 0%, #ED8F03  80%, #FFB75E  100%);
+  text-transform: uppercase;
+  width: 80%;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  background-color: transparent;
+  border: 1px solid goldenrod;  
+  border-radius: 40px;
+  margin-top: 20px;
+  box-shadow: 0px 3px 20px 2px goldenrod;
+}
+
+.BtnSongWish2:hover{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* Poll WInner Design */
+
+.WinnerBox{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-top: 100px;
+}
+
+.WinnerRow{
+  align-self: center;
+}
+
+.WinnerTrack{
+  background-image: linear-gradient(to right, indigo 30%, #ED8F03  100%, #FFB75E  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px #eee;
+  margin-top: 30px;
+  border: 1px solid goldenrod;
+  border-radius: 20px;
+  width: 300px;
+  height: 43px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.WinnerHeader{
+  width: 350px;
+}
+
+.WinnerGetReady{
+  width: 470px;
+  margin-top: 40px;
+}
+
+
+@media only screen and (min-width: 390px){
+  
+  .ImageSendToVote{
+    width: 150px;
+  }
+  
+  .ImageMakeASongWish{
+    width:150px
+  }
+
+  .WinnerHeader{
+    width: 350px;
+  }
+  
+  .WinnerGetReady{
+    width: 470px;
+    margin-top: 40px;
+    
+  }
+  
+}
+
+@media only screen and (min-width: 500px){
+ .App{
+  max-width: 70%;
+ }
+
+
+ 
+}
